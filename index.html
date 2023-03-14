@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cv-AW</title>
+
+    <!-- estilos -->
+    <link href="styles\style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon"href="https://cdn0.iconfinder.com/data/icons/files-documents-outline/512/oYPS__file_document_CV_resume_resume_curriculum_vitae_sheet_paper_page-512.png" srcset="https://cdn0.iconfinder.com/data/icons/files-documents-outline/512/oYPS__file_document_CV_resume_resume_curriculum_vitae_sheet_paper_page-1024.png 2x" alt="Curriculum, cv, document, file, page, resume, vitae icon - Download on Iconfinder" class="d-block mx-auto">"
+  </head>
+  <body>
+    <h2>Alicia Wallace</h2>
+    <section class="section">
+        <div class="title">
+          <script>          
+          const persona='<strong>Email</strong>:alicia.wallace@example.com<br><strong>Fecha De Nacimiento:</strong>6/7/1972<br><strong>Teléfono </strong>:(465) 563-7300';
+          const JSONString = JSON.stringify(persona);
+          document.write(JSONString +"</br>"+"<br>");
+          </script> 
+        </div>
+
+      <div class="about-center section-center">
+        <article class="about-img">
+          <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="alicia wallace image" />
+        </article>
+        <article class="about">
+          <!-- bcontenedor de botones -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="educacion">Educación</button>
+            <button class="tab-btn" data-id="conocimientos">Conocimientos</button>
+            <button class="tab-btn" data-id="experiencia">Experiencia</button>
+            <button class="tab-btn" data-id="capacidades">Capacidades</button>
+            <button class="tab-btn" data-id="info">Información Adicional</button>
+          </div>
+          <div class="about-content">
+            <!-- un item -->
+            <div class="content active" id="educacion">
+              <h4>Educación<i class="fa-thin fa-folder-open"></i></h4>
+              <p>
+                Ingeniería en Sistemas de Información.
+                <br>
+                Universidad Complutense de Madrid (2012/2018)
+              </p>
+            </div>
+            <!-- fin del item -->
+             <!--un solo item-->
+            <div class="content" id="conocimientos">
+              <h4>Conocimientos<i class="fa-thin fa-folder-open"></i></h4>
+              <p>Dominio de PHP,MySQL, HTML5, CSS3 Y JavaScript
+              </p>
+            </div>
+          <!---fin del item-->
+            <!-- un item -->
+            <div class="content" id="experiencia">
+              <h4>Experiencia<i class="fa-thin fa-folder-open"></i></h4>
+              <p>
+                    Programador Web. 
+                    <br>-Banco Santander 
+                    <br>(Agosto 2017/Diciembre 2019)
+                    <br> Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente.
+                    <br>Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%.
+                    <br>Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas.
+                    <br> Desarrollador Web 
+                    <br>-Flame Analytics
+                    <br>(Enero 2016/Agosto 2017)
+                    <br>A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers.
+                    <br>Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%.
+                    <br>Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%.
+                   
+              </p>
+             </div>
+            <!-- fin del item -->
+            <!--un solo item-->
+            <div class="content" id="capacidades">
+              <h4>Capacidades<i class="fa-thin fa-folder-open"></i></h4>
+              <p>
+                  Trabajo en equipo
+                  <br>Resolución de problemas
+                  <br>Compromiso
+                  <br>Empatía
+                  <br>Creatividad
+                  <br>Aptitud numérica
+                  <br>Velocidad perceptual
+                  <br>Apertura a la experiencia   
+                  <br>Meticulosidad           
+                  <br>Adaptabilidad           
+              </p>
+          </div>
+          <!---fin del item-->
+            <!-- un item -->
+            <div class="content" id="info">
+              <h4>Información Adicional<i class="fa-thin fa-folder-open"></i></h4>
+              <p>
+                Licencia de conducir B y auto propio
+                <br>Disponibilidad inmediata
+              </p>
+            </div>
+            <!-- fin del item -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="js\js.js"></script>
+  </body>
+</html>
